@@ -8,7 +8,7 @@ npm install
 
 ### 2. Create new D1 database
 ```
-wrangler d1 create your-database-name
+npx wrangler d1 create your-database-name
 ```
 
 output:
@@ -16,7 +16,7 @@ output:
 🌀 Creating database...
 ✅ Database created!
 
-database_name = "my-db"
+database_name = "your-database-name"
 database_id   = "abcd1234-ef56-7890-aaaa-bbbbccccdddd"
 ```
 
@@ -26,8 +26,8 @@ Copy database_id for the next step.
 ```
 "d1_databases": [
   {
-    "binding": "my_db",
-    "database_name": "my-db",
+    "binding": "your-database-name",
+    "database_name": "your-database-name",
     "database_id": "PASTE-THEIR-OWN-ID-HERE"
   }
 ]
@@ -37,17 +37,17 @@ Copy database_id for the next step.
 
 local db:
 ```
-wrangler d1 execute my-db --file=./src/schema.sql
+npx wrangler d1 execute your-database-name --file=./src/schema.sql
 ```
 
 remote db:
 ```
-wrangler d1 execute your-database-name --file=./src/schema.sql --remote
+npx wrangler d1 execute your-database-name --file=./src/schema.sql --remote
 ```
 
 ### 5. Start the development server
 ```
-wrangler dev
+npx wrangler dev
 ```
 or
 ```
@@ -56,7 +56,7 @@ npm run dev
 
 ### 6. Deploy
 ```
-wrangler deploy
+npx wrangler deploy
 ```
 or
 ```
