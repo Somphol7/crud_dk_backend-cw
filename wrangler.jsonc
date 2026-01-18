@@ -5,9 +5,9 @@
 	"compatibility_date": "2025-12-19",
 	"d1_databases": [
 		{
-			"binding": "my_db",
-			"database_name": "my-db",
-			"database_id": "67c9b4ba-cdb3-4ab4-88f4-f83558db87fe",
+			"binding": "mydb",
+			"database_name": "mydb",
+			"database_id": "63bac71e-f273-4b6b-9d6c-aafdd5809a2c"
 		}
 	]
 	// "compatibility_flags": [
