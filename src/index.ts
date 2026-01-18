@@ -14,7 +14,7 @@ app.use('*', cors({
 app.get('/', (c) => c.text('Hello Hono!'))
 
 // Helper to get D1 binding (wrangler config binds database to `my_db`)
-const getDb = (c: any) => c.env?.my_db
+const getDb = (c: any) => c.env?.mydb
 
 // List items
 app.get('/items', async (c) => {
